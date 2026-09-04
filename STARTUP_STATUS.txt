@@ -1,0 +1,121 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                     TELEFONBUCH-WEB - STARTUP STATUS                      ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+📅 Date: 2026-05-04
+🖥️  System: Ubuntu 26.04 LTS
+🟢 Status: READY TO START
+
+═══════════════════════════════════════════════════════════════════════════
+
+✅ INSTALLATION COMPLETE
+
+Components Installed:
+  ✓ Node.js v20.20.2
+  ✓ npm 10.8.2
+  ✓ Backend (Express.js + TypeScript)
+  ✓ Frontend (React + Vite + Tailwind CSS)
+  ✓ All Dependencies
+  ✓ Configuration Files
+
+═══════════════════════════════════════════════════════════════════════════
+
+🚀 SERVICES STATUS
+
+Backend:   ✅ Running on http://localhost:5000
+Frontend:  ✅ Running on http://localhost:3000
+Health:    ✅ http://localhost:5000/api/health
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎯 QUICK START COMMANDS
+
+Start Backend:
+  cd /home/vbeadmin/Telefonbuch-Web
+  npm start -w backend
+
+Start Frontend:
+  cd /home/vbeadmin/Telefonbuch-Web/frontend
+  npm start
+
+Start Both:
+  cd /home/vbeadmin/Telefonbuch-Web
+  ./start.sh
+
+═══════════════════════════════════════════════════════════════════════════
+
+⚙️  CONFIGURATION REQUIRED
+
+Before the application is fully functional, you need to configure:
+
+1. Azure AD / M365 Authentication
+   File: backend/.env
+   Required: AZURE_CLIENT_ID, AZURE_CLIENT_SECRET, AZURE_TENANT_ID
+   Source: https://portal.azure.com
+
+2. CardDAV / Nextcloud Integration
+   File: backend/.env
+   Required: CARDDAV_URL, CARDDAV_USERNAME, CARDDAV_PASSWORD
+   Source: Your Nextcloud Admin Panel
+
+═══════════════════════════════════════════════════════════════════════════
+
+📋 SETUP INSTRUCTIONS
+
+1. Configure Environment Variables:
+   nano backend/.env
+
+2. Add your credentials from:
+   - Azure Portal (for M365 Auth)
+   - Nextcloud (for CardDAV)
+
+3. Restart the backend:
+   npm start -w backend
+
+4. Access the application:
+   http://localhost:3000
+
+═══════════════════════════════════════════════════════════════════════════
+
+📂 LOG FILES
+
+Backend:  /home/vbeadmin/Telefonbuch-Web/logs/backend.log
+Frontend: /home/vbeadmin/Telefonbuch-Web/logs/frontend.log
+
+Watch logs:
+  tail -f logs/backend.log
+  tail -f logs/frontend.log
+
+═══════════════════════════════════════════════════════════════════════════
+
+📚 DOCUMENTATION
+
+Read these files for more information:
+  - INSTALLATION_COMPLETE.md  (Installation summary)
+  - GETTING_STARTED.md         (Detailed setup guide)
+  - QUICK_START.md             (5-minute quick start)
+  - DEPLOYMENT.md              (Production setup)
+  - README.md                  (Project overview)
+
+═══════════════════════════════════════════════════════════════════════════
+
+✅ NEXT STEPS
+
+1. ✅ DONE - System dependencies installed
+2. ✅ DONE - Node.js and npm installed
+3. ✅ DONE - Dependencies installed
+4. ✅ DONE - Application built
+5. ✅ DONE - Services configured
+6. ⏳ TODO - Configure Azure AD credentials
+7. ⏳ TODO - Configure CardDAV credentials
+8. ⏳ TODO - Test authentication
+9. ⏳ TODO - Setup production deployment
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎉 READY TO USE!
+
+The application is fully installed and running on your Ubuntu 26.04 LTS server.
+Configure your credentials in backend/.env to start using it.
+
+═══════════════════════════════════════════════════════════════════════════

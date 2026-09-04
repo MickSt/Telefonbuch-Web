@@ -1,0 +1,46 @@
+# Dependencies
+node_modules
+package-lock.json
+yarn.lock
+
+# Build artifacts
+dist
+build
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+CODE_REVIEW_FIXES.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime
+.runtime
+.cache
+
+# Testing
+coverage
+.nyc_output
+
+# Certs
+certs/*.crt
+certs/*.key
+certs/*.pem
+!certs/.gitkeep

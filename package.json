@@ -1,0 +1,19 @@
+{
+  "name": "telefonbuch-web",
+  "version": "1.0.0",
+  "description": "Telefonbuch-Webanwendung mit CardDAV und M365 Auth",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build -w backend && npm run build -w frontend",
+    "dev": "concurrently --max-processes 2 \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "start": "npm start -w backend"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
